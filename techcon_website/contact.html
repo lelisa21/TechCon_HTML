@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logoIcon.png" type="image/x-icon" />
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Contact</title>
+</head>
+<body>
+<header>
+      <h1>Contact Us</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="register.html">Register</a>
+        
+      </nav>
+    </header>
+
+   <main>
+  <section>
+    <h2>Contact Information</h2>
+    <p>Email us at: 
+      <a href="mailto:email@example.com">Lalool@gmail.com</a>
+    </p>
+    <p>Follow us on:</p>
+    <ul>
+      <li><a href="https://twitter.com/TechCon" target="_blank"><i class="fab fa-twitter"></i>  Twitter</a></li>
+      <li><a href="https://facebook.com/TechCon" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+      <li><a href="https://linkedin.com/company/TechCon" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Conference Venue</h2>
+    <div style="width:100%;max-width:600px;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.089665940916!2d-122.4194156846805!3d37.77492977975925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c8aaf9b0d%3A0x4f7a17a2b9f6e0af!2sSan%20Francisco!5e0!3m2!1sen!2sus!4v1671234567890" 
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <form action="/submit-contact" method="post">
+      <!-- Name -->
+      <div>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" 
+               placeholder="Enter your full name" 
+               required minlength="3" maxlength="50" 
+               pattern="[A-Za-z\s]+" 
+               title="Name should contain only letters and spaces.">
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" 
+               placeholder="your@email.com" 
+               required>
+      </div>
+
+      <!-- Message -->
+      <div>
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" 
+                  placeholder="Type your message here..." 
+                  rows="5" required minlength="10" maxlength="500"></textarea>
+      </div>
+
+      <!-- Phone (optional extra) -->
+      <div>
+        <label for="phone">Phone (Optional):</label>
+        <input type="tel" id="phone" name="phone" 
+               placeholder="123-456-7890"
+               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+               title="Format: 123-456-7890">
+      </div>
+
+      <!-- Reason for contact (extra field) -->
+      <div>
+        <label for="reason">Reason for Contact:</label>
+        <select id="reason" name="reason" required>
+          <option value="">--Please choose an option--</option>
+          <option value="general">General Inquiry</option>
+          <option value="sponsorship">Sponsorship</option>
+          <option value="speaking">Speaking Opportunities</option>
+          <option value="support">Technical Support</option>
+        </select>
+      </div>
+
+      <!-- Terms -->
+      <div>
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent">I consent to having my information processed according to the privacy policy.</label>
+      </div>
+
+      <!-- Submit -->
+      <div>
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+  </section>
+</main>
+ <footer>
+      <p>copyright 2025 TechCon. All rights Reserved.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </footer>
+</body>
+</html>
