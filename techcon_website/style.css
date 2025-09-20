@@ -85,28 +85,28 @@ section{
      margin: 10px 40px;
       border-radius: 10px;
 }
-.section1{
-    background: url(bg.png);
+section:first-child{
+    background: url(assets/bg.png);
     background-size: cover;
    background-position: center;
     height: 400px;
    
 }
-.section1 h1{
+section:first-child h1{
     font-size: 4rem;
 }
-.section1 h2{
+section:first-child h2{
     font-size: 2.3rem;
     color:#b9c41bdb ;
 }
 
-.section2 {
+section:nth-child(2) {
   background: #080841;  
   margin-top: 30px;
   padding: 30px;
  
 }
-.section2 p{
+section:nth-child(2) p{
     padding: 15px;
     
 }
